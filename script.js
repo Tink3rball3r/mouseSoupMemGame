@@ -1,3 +1,22 @@
+// nav
+const openBtn = document.getElementById('open-btn');
+const closeBtn = document.getElementById('close-btn');
+const nav = document.querySelector('.nav');
+
+openBtn.addEventListener('click', openMenu);
+
+closeBtn.addEventListener('click', closeMenu);
+
+function openMenu() {
+	nav.classList.add('open');
+}
+
+function closeMenu() {
+	nav.classList.remove('open');
+}
+
+// game
+
 const cards = document.querySelectorAll('.content');
 const cardBack = document.querySelectorAll('.back');
 const deck = document.querySelectorAll('.card');
